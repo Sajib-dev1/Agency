@@ -1,0 +1,52 @@
+#form{
+    @include pgap(140px,0px,150px,0px);
+    background-color: $scondary_bg;
+    .from-text{
+        h2{
+            @include fonts ('Inter', 700, 45px, $hadding_color);
+            line-height: 120%;
+            padding-right: 45px;
+        }
+        p{
+            @include fonts ('Inter', 400, 16px, $para_color);
+            line-height: 26px;
+            margin-top: 11px;
+            span{
+                display: block;
+                margin-top: 10px;
+            }  
+        }
+    }
+    .form-item{
+        @include pgap(61px,43px,61px,43px);
+        background-color: #fff;
+        border-radius: 20px;
+        h3{
+            @include fonts ('Inter', 700, 30px, $hadding_color); 
+        }
+        form{
+            .input-list{
+                margin-bottom: 20px;
+                .design{
+                    @include fonts ('Inter', 500, 16px, $hadding_color);
+                    line-height: 26px;
+                    margin-bottom: 10px; 
+                }
+                input{
+                    @include pgap(9px,23px,9px,23px);
+                    border-radius: 10px;
+                    border: 1px solid #E8E8E8;
+                    width: 100%;
+                }
+            }
+            button{
+                @include fonts ('Inter', 600, 20px, #fff);
+                width: 100%;
+                border: none;
+                @include pgap(11px,0px,11px,0px);
+                background-color: $primary_bg;
+                border-radius: 10px;
+            }
+        }
+    }
+}

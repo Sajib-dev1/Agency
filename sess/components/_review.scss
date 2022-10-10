@@ -1,0 +1,68 @@
+#review{
+    @include pgap(0px,0px,96px,0px);
+    .head {
+        h2 {
+            @include fonts ('Inter', 700, 45px, $hadding_color);
+        }
+
+        p {
+            @include fonts ('Inter', 400, 16px, $para_color);
+            line-height: 26px;
+            margin-top: 11px; 
+        }
+    }
+    .review-wrepper{
+        .review-item{
+            width: 408px;
+            @include pgap(54px,58px,54px,58px);
+            border-radius: 20px;
+            @include mgap(22px,12px,22px,12px);
+
+            .review-img{
+                picture{
+                    img{
+                        width: 58px !important;
+                        height: 40px;
+                    }
+                }
+            }
+            .review-text{
+                p{
+                    @include fonts ('Inter', 400, 16px, $para_color);
+                    line-height: 26px;  
+                }
+            }
+            .review-rating{
+                color: $dive_color;
+            }
+            .review-wrep{
+                margin-top: 26px;
+                .review-person{
+                    picture{
+                        img{
+                            width: 47px;
+                            height: 47px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                .review-text{
+                    margin-left: 20px;
+                    h4{
+                        @include fonts ('Inter', 600, 20px, $hadding_color);
+                        line-height: 120%;
+                    }
+                    p{
+                        @include fonts ('Inter', 400, 16px, $para_color);
+                        line-height: 26px; 
+                    }
+                }
+            }
+            &.slick-center{
+                box-shadow: 0px 15px 60px 0px #0000000F;
+
+            }
+        }
+    }
+}

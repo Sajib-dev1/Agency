@@ -1,0 +1,60 @@
+#footer{
+    @include pgap(146px,0px,0px,0px);
+    .footer-item{
+        .footer-text{
+            p{
+                @include fonts ('Inter', 400, 16px, $para-2);
+                line-height: 26px;
+                margin-top: 30px;
+                padding-right: 50px;
+            }
+        }
+    }
+    .footer-wrep{
+        .foot-first{
+            h4{
+                @include fonts ('Inter', 400, 20px, $hadding_color);
+                margin-bottom: 18px;
+            }
+            ul{
+                padding-left: 0;
+                li{
+                    a{
+                        @include fonts ('Inter', 400, 16px, $para-2);
+                        line-height: 40px;
+                        transition: all linear .3s;
+                        &:hover{
+                            text-decoration: underline;
+                            color: blue;
+                        }   
+                    }
+                }
+            }
+        }
+        .foot-scond{
+            h4{
+                @include fonts ('Inter', 400, 20px, $hadding_color);
+                margin-bottom: 18px;
+            }
+            ul{
+                padding-left: 0;
+                li{
+                    a{
+                        @include fonts ('Inter', 400, 16px, $para-2);
+                        line-height: 40px;
+                        transition: all linear .3s;
+                        &:hover{
+                            text-decoration: underline;
+                            color: blue;
+                        }  
+                    }
+                }
+            }
+        }
+    }
+    .foot-border{
+        width: 100%;
+        height: 1px;
+        background-color: #E8E8E8;
+    }
+}

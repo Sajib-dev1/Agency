@@ -1,0 +1,72 @@
+#carear{
+    @include pgap(138px,0px,150px,0px);
+    .carear-head{
+        h2{
+            @include fonts ('Inter', 700, 45px, $hadding_color);
+            line-height: 120%;
+            padding-right: 20px;
+        }
+        p{
+            @include fonts ('Inter', 400, 16px, $para_color);
+            line-height: 26px; 
+            padding-right: 20px;
+            margin-top: 13px;
+        }
+    }
+    .carear-wrepper{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        position: relative;
+        left: -19px;
+
+        .carear-item{
+            width: 330px;
+
+            h3{
+                @include fonts ('Inter', 700, 25px, $hadding_color);
+                margin-top: 20px 
+            }
+            p{
+                @include fonts ('Inter', 400, 16px, $para_color);
+                line-height: 26px;  
+            }
+        }
+    }
+    .carear-img-wrep{
+        margin-top: 89px;
+        .carear-img-1{
+            picture{
+                img{
+                    border-radius: 30px;
+                }
+            }
+        }
+        .carear-img-2{
+            width: 188px;
+            height: 188px;
+            background-color: $primary_bg;
+            position: relative;
+            left: 24px;
+            border-top-right-radius: 100px;
+        }
+    }
+    .carear-img-wrep2{
+        margin-top: 24px;
+        .carear-img-3{
+            width: 257px;
+            height: 235px;
+            background-color: $div_color2;
+            border-bottom-left-radius: 100px;
+        }
+        .carear-img-4{
+            picture{
+                img{
+                    position: relative;
+                    right: 38px;
+                    border-bottom-right-radius: 100px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+#project {
+    @include pgap(147px, 0px, 182px, 0px);
+    background-color: $scondary_bg;
+
+    .head {
+        h2 {
+            @include fonts ('Inter', 700, 45px, $hadding_color);
+        }
+
+        p {
+            @include fonts ('Inter', 400, 16px, $para_color);
+            line-height: 26px;
+            margin-top: 11px;
+        }
+    }
+
+    .project-item {
+        padding-bottom: 7px;
+        background-color: #fff;
+        border-radius: 20px;
+        margin-top: 49px;
+        transition: all linear .3s;
+
+        .project-img {
+            picture {
+                img {
+                    border-radius: 20px;
+                }
+            }
+        }
+        .project-text{
+            h4{
+                @include fonts ('Inter', 700, 20px, $hadding_color);
+                margin-top: 30px;
+            }
+            p{
+                @include fonts ('Inter', 400, 16px, $para_color);
+                line-height: 26px;
+                @include pgap(0px,31px,0px,31px)
+            }
+        }
+        &:hover{
+            transform: scale(.95);
+        }
+    }
+}

@@ -1,0 +1,35 @@
+#service{
+    @include pgap(150px,0px,102px,0px);
+    .head{
+        h2{
+            @include fonts ('Inter', 700, 45px, $hadding_color); 
+        }
+        p{
+            @include fonts ('Inter', 400, 16px, $para_color);
+            line-height: 26px; 
+            margin-top: 11px;  
+        }
+    }
+    .service-item{
+        background-color: #fff;
+        @include pgap(47px,49px,47px,49px);
+        margin-top: 27px;
+        border-radius: 20px;
+        transition: all linear .3s;
+
+        .service-text{
+            h4{
+                @include fonts ('Inter', 700, 25px, $hadding_color);
+                @include mgap(39px,0px,17px,0px);
+            }
+            p{
+                @include fonts ('Inter', 400, 16px, $para_color);
+                line-height: 26px;
+            }
+        }
+        &:hover{
+            box-shadow: 0px 6px 35px 0px #0000000F;
+
+        }
+    }
+}

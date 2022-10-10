@@ -1,0 +1,80 @@
+#banner {
+    @include mgap(68px, 0px, 35px, 0px);
+
+    .banner_text {
+        h1 {
+            @include fonts ('Inter', 700, 75px, $hadding_color);
+            line-height: 120%;
+        }
+
+        p {
+            @include fonts ('Inter', 400, 16px, $para_color);
+            line-height: 26px;
+            padding-right: 28px
+        }
+
+        button {
+            @include pgap(8px, 41px, 8px, 41px);
+            border: none;
+            background-color: $primary_bg;
+            border-radius: 10px;
+            @include fonts ('Inter', 600, 20px, #fff);
+            text-transform: capitalize;
+            margin-top: 6px;
+        }
+    }
+
+    .banner_img {
+        width: 502px;
+        margin-left: 133px;
+        .banner-start {
+            @include whc (123px, 123px, $dive_color);
+        }
+        .banner-mid{
+            picture{
+                img{
+                    border-top-right-radius: 100px;
+                }
+            }
+        }
+        .banner-end {
+            @include whc (103px, 103px, $div_color2);
+            border-bottom-right-radius: 100px;
+            position: relative;
+            right: -20px;
+        }
+    }
+    .banner-wrepper{
+        flex-wrap: wrap;
+        margin-top: 24px;
+        .banner-item{
+            &:nth-child(2){
+                position: relative;
+                right: -18px;
+            }
+            &:nth-child(3){
+                position: relative;
+                top: -114px;
+                left: 53px;
+            }
+            .top-img{
+                picture{
+                    img{
+                        border-top-left-radius: 100px;
+                    }
+                }
+            }
+            .img-mid{
+                picture{
+                    img{
+                        border-radius: 30px;
+                    }
+                }
+            }
+            .last{
+                @include whc (205px, 205px, $primary_bg);
+                border-bottom-left-radius: 100px;
+            }
+        }
+    }
+}

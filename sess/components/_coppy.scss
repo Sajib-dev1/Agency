@@ -1,0 +1,22 @@
+#coppy{
+    .coppy-text{
+        p{
+            @include fonts ('Inter', 400, 16px, #D0D0D0);
+            @include mgap(20px,0px,20px,0px);
+        }
+    }
+    .back-to-top{
+        width: 40px;
+        height: 40px;
+        background-color: $hover_color;
+        border-radius: 50%;
+        line-height: 40px;
+        text-align: center;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+    }
+}
